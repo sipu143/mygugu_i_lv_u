@@ -12,7 +12,7 @@
      service:
         name: apache2
         state: started
-     when: ansible_os_family =="Debain"
+     when: ansible_os_family =="Debian"
 
    - name: i want to install webserver on ansible RedHat nodes
      yum: 
@@ -25,4 +25,5 @@
         name: httpd
         state: started
      when: ansible_os_family =="RedHat"    
+     
                
