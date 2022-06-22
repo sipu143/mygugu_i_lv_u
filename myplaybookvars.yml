@@ -1,5 +1,5 @@
 ---
-- hosts: mywebservers
+- hosts: 172.31.17.187
   become: yes
   vars:
     myvars1: git
@@ -10,7 +10,7 @@
      debug:  
         msg: "{{myvars1}}"
 
-   - name: i want to install git
+   - name: i want to install tree
      apt:
-       name: "{{git}}"
+       name: "{{tree}}"
        state: present
