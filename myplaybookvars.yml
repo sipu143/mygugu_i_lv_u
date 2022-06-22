@@ -12,5 +12,5 @@
 
    - name: i want to install tree
      apt:
-       name: tree
+       name: "{{tree}}"
        state: present
