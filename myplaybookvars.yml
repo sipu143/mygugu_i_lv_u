@@ -7,7 +7,7 @@
     myvars3: wget
   tasks:
    - name: i want to display myvars1
-     debung:  
+     debug:  
         msg: "{{myvars1}}"
 
    - name: i want to install tree
