@@ -10,6 +10,14 @@
    - name: i want to display git
      debug:
        msg: "{{myvars01}}"
-       
-         
+
+   - name: i want to install tree
+     apt:  
+       name: "{{myvars02}}"
+       state: present
+
+     loop:
+      - "{{myvars01}}"   
+      - "{{myvars02}}"     
+      - "{{myvars03}}"
 
