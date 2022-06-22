@@ -10,7 +10,7 @@
      debug:  
         msg: "{{myvars1}}"
 
-   - name: i want to install tree
+   - name: i want to install git
      apt:
-       name: "{{tree}}"
+       name: "{{git}}"
        state: present
