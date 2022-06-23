@@ -15,3 +15,8 @@
        name: "{{myvars02}}"
        state: present
 
+     loop:
+       - git
+       - wget
+       - tree   
+
