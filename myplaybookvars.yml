@@ -1,0 +1,11 @@
+---
+- hosts: mywebservers
+  become: yes
+  vars: 
+    myvars01: git
+    myvars02: wget
+    myvars03: tree
+  tasks:
+   - name: i want to display 
+     debug:
+        msg: git  
