@@ -16,7 +16,7 @@
         dest: /var/www/html/index.html
     notify: restarted    
 
-  hendler: 
+  handler: 
     name: i want to restarted webserver 
     servive:
        name: apache2
