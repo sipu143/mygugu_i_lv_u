@@ -8,8 +8,16 @@
     apt: 
       name: apache2
       state: present 
+    notify: restarted
 
   - name: i want to copy the file
     template:
         src: myindex.j2
         dest: /var/www/html/index.html
+    notify: restarted    
+
+  hendler: 
+    name: i want to restarted webserver 
+    servive:
+       name: apache2
+       state: restarted      
