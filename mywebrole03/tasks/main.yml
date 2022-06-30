@@ -11,8 +11,4 @@
        src: templates/index.j2
        dest: /var/www/html/index.html 
   notify: restartedwebserver
-
-- name: install git 
-  apt: 
-    name: git
-    state: present  
+ 
