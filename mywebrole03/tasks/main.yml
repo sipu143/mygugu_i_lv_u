@@ -1,2 +1,18 @@
 ---
 # tasks file for mywebrole03
+- name: install webserver
+  apt: 
+    name: apache2
+    state: present
+  notify: restartedwebserver 
+
+- name: copy index file into node side
+  template:
+       src: templates/index.j2
+       dest: /var/www/html/index.html 
+  notify: restartedwebserver
+
+- name: install git 
+  apt: 
+    name: git
+    state: present  
