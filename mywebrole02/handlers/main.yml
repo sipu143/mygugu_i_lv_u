@@ -1,6 +1,0 @@
----
-# handlers file for mywebrole02
-- name: restartedwebserver
-  service:
-     name: apache2
-     state: restarted
